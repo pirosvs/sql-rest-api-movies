@@ -34,6 +34,22 @@ app.get('/api/movies', (req, res) => {
 //   res.json(dbObj);
 });
 
+app.get('./api/add-movie', (req, res) => {
+    // res.json(again r we using json or seeds?? is this useful?);
+})
+
+app.post('./api/add-movie', (req, res) => {
+    // add a movie -- how?? 
+})
+
+app.get('./api/update-review', (req, res) => {
+    // updates a movie?? again what does this mean/ expect? do we need a get and post?
+})
+
+app.get('./api/movie/:id', (req, res) => {
+    // dk if this is a get actually since it needs to delete a route??
+})
+
 // GET Route for anything else to force to homepage
 app.get('*', (req, res) => {
   console.log("GET *");
